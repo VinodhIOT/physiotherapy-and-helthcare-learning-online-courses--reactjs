@@ -1,0 +1,249 @@
+.course-pg{
+  max-width: 1200px;       
+  margin: 0 auto;  
+}
+
+.courses-page {
+ 
+  color: #333;
+
+
+
+
+  // .cards {
+  //     display: flex;
+  //     gap: 30px;
+  //     align-items: center;
+  //     div {
+  //       p {
+  //         margin: 0%;
+  //       }
+  //     }
+  //   }
+  
+  // .cards{
+  //     display: flex;
+      
+  //     div{
+  //       p{
+  //         width: fit-content;
+  //         margin-top: 0px;
+  //       }
+  //     }
+  //     div{
+  //       img{
+  //         width: fit-content;
+  //         margin-top: 0px;
+  //       }
+  //     }
+  // }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    font-family: Montserrat;
+    background: #fff;
+
+    .hero-content {
+ 
+      margin-top: 70px;
+      width: 700px;
+      position: absolute;
+
+      h1 {
+        font-size: 44px;
+        line-height: 1.3;
+        font-weight: bold;
+        span {
+          
+         text-wrap: nowrap;
+         background: linear-gradient(to right, #6a11cb, #2575fc);
+         background-clip: text;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+         
+        }
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        margin: 20px 0;
+        font-size: 21px;
+        
+       
+      }
+
+      .explore-btn {
+        padding: 12px 62px;
+        font-family: Montserrat;
+        border: none;
+        background: linear-gradient(to right, #6a11cb,#00A9E0 );
+        color: white;
+        border-radius: 100px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+
+    .hero-image img {
+      width: 450px;
+      position: relative;
+      margin-left:750px;
+      margin-top: -20px;
+
+   
+    }
+  }
+
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // gap: 20px;
+    // padding: 20px 60px;
+  
+   
+
+    .search-box {
+      padding-right: 35px;
+      border: 1px solid #ccc;
+      border-radius: 100px;
+      height: 35px;
+      font-size: 14px;
+      margin-left: 70px;
+     background: url('../../assets/icons/search.png') no-repeat right 10px center;
+    }
+    
+    .tabs button {
+      background: none;
+      border: none;
+      font-family: Montserrat;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: 400;
+
+      &.active {
+        
+        color: black;
+        font-weight: bold;
+      }
+      .active::after{
+        border-bottom: 2px solid #6a11cb;
+      }
+    }
+
+    .sort {
+      display: flex;
+      font-family: Montserrat;
+      font-weight: 500;
+      align-items: center;
+      gap: 5px;
+
+
+    }
+  .sort select {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  background-color: rgba(216, 212, 212, 0.542);
+  border-radius: 100px;
+  border: none;
+  padding: 10px;
+  
+ }
+
+ .sort option {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+   
+ 
+}
+    
+  }
+
+
+  .courses-list {
+    margin: 0;
+    padding: 24px 0px;
+      font-family: Montserrat;
+     
+    h2{
+      display: flex;
+      margin-top: 20px;
+      font-family: Montserrat ;
+      font-weight: 600;
+      size: 40px;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      font-family: Montserrat;
+      
+    
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      position: relative;
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      h3 {
+        margin-top: 10px;
+        font-size: 1rem;
+        text-align: left;
+
+      }
+      p{
+         text-align: left;
+
+      }
+
+      .rating {
+        // margin-top: 10px;
+        margin-left:10px ;
+      
+         img{
+          width: 140px;
+          
+          
+         }
+      }
+
+     .arrow-btn {
+      position: absolute;
+      right: 16px;
+      top: 186px;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .arrow-btn img {
+      width: 48px;
+      height: 48px;
+    }
+    }
+  border-bottom: 2px solid rgb(102, 102, 102);
+  }
+  
+}

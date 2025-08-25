@@ -1,0 +1,100 @@
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #eee; 
+
+ 
+  &-left{
+    display :flex ;
+    gap: 8px;
+  
+  }
+
+  &-img{
+    width: 30px ;
+    height: 34px ;
+    margin-top: 28px;
+  }
+
+  &-logo {
+    display: flex;
+    font-size: 30px;
+    font-family: paytone One;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &-links {
+
+     display: flex;
+     list-style: none;
+     gap: 25px;
+    //  font-family: Montserrat;
+         font-family: Montserrat; 
+     font-weight:500 ;
+     
+
+
+    li {
+      cursor: pointer;
+      transition: color 0.3s ease;
+    
+      .link {
+        text-decoration: none;
+        color: black;
+      }
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  &-btn {
+    background: linear-gradient(to right,#8E2DE2 ,#00A9E0 );
+    color: #fff;
+    font-size: 18px;
+    font-family: Montserrat ;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &-icons{
+
+    display: flex;
+    gap : 27px;
+    height: 19px;
+
+  }
+
+}
+.gradient-underline {
+  display: inline-block; 
+  background-image: linear-gradient(to right, #8E2DE2, #00A9E0);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%; 
+  padding-bottom: 8px; 
+  
+}
+.gradient-underline {
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease;
+}
+
+
+.gradient-underline:hover {
+  background-size: 100% 2px;
+}
