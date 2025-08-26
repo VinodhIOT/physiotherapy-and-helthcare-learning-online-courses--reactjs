@@ -1,6 +1,6 @@
 import React from "react";
 import "./WatchNow.scss";
-import Course from "../../Components/Courses/Course";
+import Course from "../../Components/coursesCards/Course.jsx";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import { useLocation } from "react-router-dom";

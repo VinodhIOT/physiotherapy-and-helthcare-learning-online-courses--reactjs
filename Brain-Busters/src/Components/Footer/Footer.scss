@@ -1,87 +1,149 @@
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 
 .footer-container {
-  margin-left: 100px;
-  margin-right: 100px;
-  
+  margin: 0 auto;
+  padding: 40px 100px; // more balanced padding
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
+  // ✅ Logo
   .footer-logo {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     align-items: center;
 
     img {
-      width: 30px;
-      height: 34px;
+      width: 34px;
+      height: 36px;
     }
     h1 {
       font-family: "Paytone One", sans-serif;
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 500;
     }
   }
 
+  // ✅ Main Grid (Address + Links + Content + Contact + Socials)
   .footer-address {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
-  .footer-links {
+
+  .footer-links,
+  .footer-content,
+  .contact-us,
+  .follow-us {
     h4 {
       font-family: "Montserrat", sans-serif;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
     }
   }
+
   a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: black;
     font-family: "Open Sans", sans-serif;
+    font-size: 0.95rem;
   }
+
   .footer-content {
-    h4 {
-      font-family: "Montserrat", sans-serif;
-    }
     p {
       font-family: "Open Sans", sans-serif;
-      width: 589px;
+      max-width: 400px;
+      line-height: 1.5;
+      font-size: 0.95rem;
     }
   }
+
   .contact-us {
-    h4 {
-      font-family: "Montserrat", sans-serif;
-    }
     .phone,
     .email {
       display: flex;
       gap: 10px;
-      
       align-items: center;
+      margin-bottom: 12px;
+
       img {
-        width: 38px;
-        height: 37.93px;
+        width: 28px;
+        height: 28px;
       }
       p {
         font-family: "Open Sans", sans-serif;
+        font-size: 0.9rem;
       }
     }
   }
+
   .follow-us {
-    h4 {
-      font-family: "Montserrat", sans-serif;
-    }
     .social-media {
       display: flex;
-      gap: 10px;
+      gap: 12px;
       align-items: center;
 
       img {
-        width: 38px;
-        height: 37.93px;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        transition: transform 0.2s;
       }
-      p {
-        font-family: "Open Sans", sans-serif;
+      img:hover {
+        transform: scale(1.1);
       }
+    }
+  }
+}
+
+/* ✅ Responsiveness */
+
+/* Laptop (≤1200px) */
+@media (max-width: 1200px) {
+  .footer-container {
+    padding: 30px 60px;
+
+    .footer-address {
+      grid-template-columns: repeat(2, 1fr); // two columns
+    }
+  }
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 20px 30px;
+
+    .footer-address {
+      grid-template-columns: 1fr; // single column
+      gap: 25px;
+    }
+
+    .footer-content p {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 20px;
+
+    .footer-logo h1 {
+      font-size: 22px;
+    }
+
+    a {
+      font-size: 0.85rem;
+    }
+
+    .footer-content p {
+      font-size: 0.85rem;
     }
   }
 }

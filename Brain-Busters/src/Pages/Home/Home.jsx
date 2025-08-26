@@ -7,7 +7,7 @@ import userImg from "../../assets/Images/userimg.png";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import Laracard from "../../Components/Introduction/Laracard";
-import Course from "../../Components/Courses/Course";
+import Course from "../../Components/coursesCards/Course.jsx";
 import key1 from "../../assets/icons/key1.png";
 import key2 from "../../assets/icons/key2.png";
 import key3 from "../../assets/icons/key3.png";
@@ -67,10 +67,16 @@ function Home() {
         <h2>Key Features</h2>
         <div className="features-grid">
           <div className="feature-card yellow">
-            <h3>
-              Medical
-              <br /> Mastery
-            </h3>
+            <div className="key11">
+              <h3>
+                Medical
+                <br /> Mastery
+              </h3>
+              <div className="key1">
+                <img src={key1} alt="" />
+              </div>
+            </div>
+
             <p>
               Step into your clinical <br />
               career
@@ -83,11 +89,17 @@ function Home() {
             </p>
           </div>
           <div className="feature-card green">
-            <h3>
-              Physiotherapy
-              <br />
-              Excellence
-            </h3>
+            <div className="key21">
+              <h3>
+                Physiotherapy
+                <br />
+                Excellence
+              </h3>
+              <div className="key2">
+                <img src={key2} alt="" />
+              </div>
+            </div>
+
             <p>
               Learn the latest
               <br />
@@ -101,11 +113,17 @@ function Home() {
             </p>
           </div>
           <div className="feature-card blue">
-            <h3>
-              Exam
-              <br />
-              Preparation
-            </h3>
+            <div className="key31">
+              <h3>
+                Exam
+                <br />
+                Preparation
+              </h3>
+              <div className="key3">
+                <img src={key3} alt="" />
+              </div>
+            </div>
+
             <p>
               Our resources will prepare
               <br />
@@ -118,22 +136,11 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="keys">
-        <div className="key1">
-          <img src={key1} alt="" />
-        </div>
-        <div className="key2">
-          <img src={key2} alt="" />
-        </div>
-        <div className="key3">
-          <img src={key3} alt="" />
-        </div>
-      </section>
+      
       <div className="courses-list">
         <h2>Brain Busters Courses</h2>
-      
-      <Course />
-      <button
+        <Course />
+        <button
           className="explore-btn"
           onClick={() =>
             navigate("/courses", { state: { scrollTo: "courses-list" } })
@@ -141,7 +148,7 @@ function Home() {
         >
           <span>Explore All Courses</span>
         </button>
-        </div>
+      </div>
       <Laracard />
 
       <div className="contact-section">

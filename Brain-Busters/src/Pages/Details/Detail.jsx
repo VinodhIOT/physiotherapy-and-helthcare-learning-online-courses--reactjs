@@ -16,7 +16,7 @@ import certificate from "../../assets/icons/certificate.png";
 
 // data
 import courses from "../../api/data/coursesData";
-import Course from "../../Components/Courses/Course";
+import Course from "../../Components/coursesCards/Course.jsx";
 
 function DetailPage() {
   const location = useLocation();

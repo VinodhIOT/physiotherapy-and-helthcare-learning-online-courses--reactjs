@@ -1,8 +1,7 @@
 .brain-busters {
   font-family: Arial, sans-serif;
-   max-width: 1200px;       
-  margin: 0 auto;  
-
+  max-width: 1200px;
+  margin: 0 auto;
 
   .hero {
     display: flex;
@@ -43,7 +42,6 @@
         }
         p {
           font-weight: 400;
-          
         }
 
         img {
@@ -85,15 +83,15 @@
 
     p {
       color: #555;
-       font-size: 17px;
+      font-size: 17px;
       font-family: "Open Sans", sans-serif;
     }
   }
 
   .features {
     // padding: 40px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 90px;
+    margin-right: 90px;
 
     h2 {
       text-align: center;
@@ -102,8 +100,7 @@
 
     .features-grid {
       display: flex;
-      gap: 10px;
-      position: relative;
+      gap: 50px;
       margin-top: 20px;
 
       .feature-card {
@@ -115,11 +112,29 @@
         &.yellow {
           border-top-right-radius: 10px;
           background: linear-gradient(180deg, #fff0e9 0%, #fdf8a8 100%);
-          h3 {
-            font-family: Montserrat;
-            font-size: 32px;
-            margin-top: 0px;
+          .key11 {
+            display: flex;
+            gap: 55px;
+            h3 {
+              font-family: Montserrat;
+              font-size: 32px;
+              margin: 0px;
+            }
+            .key1 {
+              background: rgba(254, 247, 159, 1);
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 40px;
+                height: auto;
+              }
+            }
           }
+
           p {
             font-family: Open Sans;
             font-size: 15px;
@@ -128,12 +143,29 @@
         }
         &.green {
           background: linear-gradient(232.65deg, #bfffe4 4.71%, #f1f595 98.18%);
-          h3 {
-            font-family: Montserrat;
-            font-size: 32px;
-            margin-top: 0px;
-            // margin-right: 20px;
+          .key21 {
+            display: flex;
+            gap: 20px;
+            h3 {
+              font-family: Montserrat;
+              font-size: 32px;
+              margin: 0px;
+            }
+            .key2 {
+              background: rgba(165, 255, 167, 1);
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 40px;
+                height: auto;
+              }
+            }
           }
+
           p {
             font-family: Open Sans;
             font-size: 15px;
@@ -142,10 +174,27 @@
         }
         &.blue {
           background: linear-gradient(232.22deg, #6ffff5 4.85%, #e5ffe2 99.88%);
-          h3 {
-            font-family: Montserrat;
-            font-size: 32px;
-            margin-top: 0px;
+          .key31 {
+            display: flex;
+            gap: 20px;
+            h3 {
+              font-family: Montserrat;
+              font-size: 32px;
+              margin: 0px;
+            }
+            .key3 {
+              background: rgba(228, 209, 255, 1);
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 40px;
+                height: auto;
+              }
+            }
           }
           p {
             font-family: Open Sans;
@@ -153,54 +202,6 @@
             font-weight: 500;
           }
         }
-      }
-    }
-  }
-  .keys {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    margin-left: 360px;
-    margin-top: -220px;
-    gap: 250px;
-
-    .key1 {
-      background: rgba(254, 247, 159, 1);
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 40px;
-        height: auto;
-      }
-    }
-    .key2 {
-      background: rgba(165, 255, 167, 1);
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 40px;
-        height: auto;
-      }
-    }
-    .key3 {
-      background: rgba(228, 209, 255, 1);
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 40px;
-        height: auto;
       }
     }
   }
@@ -216,23 +217,23 @@
       margin-top: 50px;
     }
     .explore-btn {
-    display: block;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 50px;
-    cursor: pointer;
-    border: 3px solid linear-gradient(to right, #6a11cb, #2575fc);
-    span {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: Montserrat;
-      font-size: 24px;
-      margin-left: 100px;
-      margin-right: 100px;
+      display: block;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 50px;
+      cursor: pointer;
+      border: 3px solid linear-gradient(to right, #6a11cb, #2575fc);
+      span {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat;
+        font-size: 24px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
     }
-  }
   }
 
   .contact-section {
@@ -332,28 +333,9 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .brain-busters {
   font-family: Arial, sans-serif;
-  max-width: 1200px;
+//   max-width: 1200px;
   margin: 0 auto;
 
   // ✅ Default: Desktop (large screens)

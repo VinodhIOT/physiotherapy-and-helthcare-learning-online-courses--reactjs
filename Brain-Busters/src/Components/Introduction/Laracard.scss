@@ -1,89 +1,163 @@
 .cards {
   .tittle {
-    font-family: Montserrat;
-    font-size: 40px;
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(24px, 5vw, 40px);
     font-weight: 600;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 40px 0;
   }
+
   .cards-content {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: rgba(251, 247, 255, 1);
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
     border-radius: 40px;
     position: relative;
+    gap: 30px;
 
     .card-img {
       img {
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
         border-radius: 10px;
       }
     }
+
     .content {
-      padding: 20px;
+      flex: 1;
+      padding: 10px;
+
       .content-image {
-        width: 80px;
+        width: 60px;
       }
+
       h1 {
-        font-family: Montserrat;
-        font-size: 48px;
-        margin-top: 20px;
-        margin-bottom: 0px;
+        font-family: Montserrat, sans-serif;
+        font-size: clamp(24px, 4vw, 48px);
+        margin: 20px 0 0 0;
       }
+
       div {
         display: flex;
-        gap: 2px;
-        margin: 0px;
+        gap: 5px;
+        margin: 5px 0;
+
         .color {
           background: linear-gradient(to right, #6a11cb, #2575fc);
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          margin: 0px;
-          font-size: 32px;
-          font-family: Montserrat;
+          font-size: clamp(18px, 3vw, 32px);
+          font-family: Montserrat, sans-serif;
         }
+
         .non-color {
           color: rgba(130, 130, 130, 1);
-          margin: 0px;
-          font-size: 32px;
-          font-family: Montserrat;
+          font-size: clamp(18px, 3vw, 32px);
+          font-family: Montserrat, sans-serif;
         }
       }
+
       p {
-        font-family: Open Sans;
-        margin-bottom: 0%;
-        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-size: clamp(14px, 2.5vw, 16px);
+        margin-bottom: 0;
       }
     }
   }
+
   .larauser {
     background: linear-gradient(92.11deg, #8e2de2 -26.22%, #00a9e0 99.66%);
     width: fit-content;
     border-radius: 50px;
     position: absolute;
-    margin-left: 220px;
-    margin-top: -85px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
     div {
-        margin-left: 10px;
-        margin-right: 5px;
       display: flex;
-      padding: 10px;
+      align-items: center;
+      padding: 8px 12px;
+      gap: 8px;
+
       p {
         background: rgba(255, 255, 255, 1);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 16px;
-        font-family: Montserrat;
-        margin: 1%;
-
+        font-family: Montserrat, sans-serif;
+        margin: 0;
       }
+
       img {
-        width: 120px;
-        height: fit-content;
+        width: 80px;
+        height: auto;
+      }
+    }
+  }
+
+  /* ✅ Responsive breakpoints */
+  @media (max-width: 992px) {
+    .cards-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+
+      .card-img img {
+        max-width: 250px;
+      }
+
+      .content {
+        padding: 15px;
+      }
+    }
+
+    .larauser {
+      top: -30px;
+
+      div img {
+        width: 60px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .cards-content {
+      gap: 15px;
+
+      .card-img img {
+        max-width: 200px;
+      }
+
+      .content h1 {
+        font-size: 24px;
+      }
+
+      .content div .color,
+      .content div .non-color {
+        font-size: 18px;
+      }
+
+      .content p {
+        font-size: 14px;
+      }
+    }
+
+    .larauser {
+      top: -25px;
+
+      div img {
+        width: 50px;
+      }
+
+      div p {
+        font-size: 14px;
       }
     }
   }
