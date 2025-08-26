@@ -68,39 +68,42 @@
         margin-bottom: 0;
       }
     }
-  }
 
-  .larauser {
+    .larauser {
     background: linear-gradient(92.11deg, #8e2de2 -26.22%, #00a9e0 99.66%);
     width: fit-content;
     border-radius: 50px;
     position: absolute;
-    top: -40px;
-    left: 50%;
+    top: 275px;
+    left: 178px;
     transform: translateX(-50%);
 
     div {
+      margin: 6px;
       display: flex;
       align-items: center;
       padding: 8px 12px;
-      gap: 8px;
+      gap: 30px;
 
       p {
         background: rgba(255, 255, 255, 1);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 16px;
+        font-size: 18px;
         font-family: Montserrat, sans-serif;
         margin: 0;
       }
 
       img {
-        width: 80px;
+        width: 100px;
         height: auto;
       }
     }
   }
+  }
+
+  
 
   /* ✅ Responsive breakpoints */
   @media (max-width: 992px) {

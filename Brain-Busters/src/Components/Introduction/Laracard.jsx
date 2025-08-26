@@ -26,13 +26,14 @@ function Laracard() {
               exceptional, making the learning process smooth and enjoyable!
             </p>
           </div>
-        </div>
-        <div className="larauser">
+          <div className="larauser">
           <div>
-            <p>Our Students</p>
+            <p>Our<br/>Students</p>
             <img src={user} alt="user" />
           </div>
         </div>
+        </div>
+        
       </div>
     </>
   );
